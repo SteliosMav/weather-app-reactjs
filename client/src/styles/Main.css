@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: #232b2b;
+}
+
+.space {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.space > img {
+  margin-right: 10px;
+}
