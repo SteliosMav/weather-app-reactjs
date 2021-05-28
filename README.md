@@ -5,7 +5,7 @@ In the project directory, you can run:
 ### `Start the server`
 
 cd client
-npm startain
+npm start
 
 ### `Start the client`
 
