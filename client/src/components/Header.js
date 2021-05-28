@@ -8,20 +8,17 @@ const useStyles = makeStyles(() => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    minHeight: '80px',
   },
 }));
 
-const Header = ({ cityData, setCityData, setStatus }) => {
+const Header = ({ setCityData, setStatus }) => {
   const { toolbar } = useStyles();
 
   return (
     <HeaderAppBar position="sticky">
       <Toolbar className={toolbar}>
-        <SearchBar
-          cityData={cityData}
-          setCityData={setCityData}
-          setStatus={setStatus}
-        />
+        <SearchBar setCityData={setCityData} setStatus={setStatus} />
       </Toolbar>
     </HeaderAppBar>
   );

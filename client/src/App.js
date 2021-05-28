@@ -1,4 +1,3 @@
-import './styles/Main.css';
 import MainPage from './pages/MainPage';
 
 const App = () => {
@@ -7,6 +6,6 @@ const App = () => {
       <MainPage />
     </div>
   );
-}
+};
 
 export default App;

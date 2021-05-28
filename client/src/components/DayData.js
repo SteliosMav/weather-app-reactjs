@@ -3,8 +3,9 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import { SpaceImage, Space } from '../styles/mainStyles';
 
-const DayData = ({ dayData = {} }) => (
+const DayData = ({ dayData }) => (
   <Grid item>
     <Paper elevation={2} style={{ padding: '30px' }}>
       <Grid container spacing={1} direction="column" align="start">
@@ -13,14 +14,16 @@ const DayData = ({ dayData = {} }) => (
             {dayData.applicable_date}
           </Typography>
         </Grid>
-        <Grid item className="space">
-          <img
-            alt="weather"
-            width="32"
-            height="32"
-            src={`https://www.metaweather.com/static/img/weather/png/${dayData.weather_state_abbr}.png`}
-          />
-          <Typography>{dayData.weather_state_name}</Typography>
+        <Grid item>
+          <Space>
+            <SpaceImage
+              alt="weather"
+              width="32"
+              height="32"
+              src={`https://www.metaweather.com/static/img/weather/png/${dayData.weather_state_abbr}.png`}
+            />
+            <Typography>{dayData.weather_state_name}</Typography>
+          </Space>
         </Grid>
 
         <Grid item>
