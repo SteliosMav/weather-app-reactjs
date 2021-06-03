@@ -8,10 +8,10 @@ npm install
 
 ### `Start the server`
 
-cd client
+cd server
 npm start
 
 ### `Start the client`
 
-cd server
+cd client
 npm start
